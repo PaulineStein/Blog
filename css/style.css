@@ -1,0 +1,410 @@
+@font-face {
+    font-family: 'Transmedia';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Transmedia-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/poppins-v20-latin-500.woff2') format('woff2'),
+        url('../fonts/poppins-v20-latin-500.woff') format('woff');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 500;
+    src: url('../fonts/poppins-v20-latin-500italic.woff2') format('woff2'),
+        url('../fonts/poppins-v20-latin-500italic.woff') format('woff');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/poppins-v20-latin-600.woff2') format('woff2'),
+        url('../fonts/poppins-v20-latin-600.woff') format('woff');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 600;
+    src: url('../fonts/poppins-v20-latin-600italic.woff2') format('woff2'),
+        url('../fonts/poppins-v20-latin-600italic.woff') format('woff');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/poppins-v20-latin-700.woff2') format('woff2'),
+        url('../fonts/poppins-v20-latin-700.woff') format('woff');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 700;
+    src: url('../fonts/poppins-v20-latin-700italic.woff2') format('woff2'),
+        url('../fonts/poppins-v20-latin-700italic.woff') format('woff');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/poppins-v20-latin-800.woff2') format('woff2'),
+        url('../fonts/poppins-v20-latin-800.woff') format('woff');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 800;
+    src: url('../fonts/poppins-v20-latin-800italic.woff2') format('woff2'),
+        url('../fonts/poppins-v20-latin-800italic.woff') format('woff');
+}
+
+:root {
+    --dark-grey: #262626;
+    --orange: #FF7518;
+
+}
+
+body {
+    background-color: var(--orange);
+    color: var(--dark-grey);
+    font-family: 'Poppins';
+    font-weight: 700;
+
+}
+
+
+
+/* HEADER.PHP */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    border-bottom: #262626 0.2rem solid;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    background-color: rgba(255, 117, 24, 0.9);
+}
+
+.title-set {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+    /* align-items: baseline; */
+}
+
+.menu-set {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+h1 {
+    font-family: 'Transmedia';
+    font-size: 4rem;
+}
+
+h1 a {
+    text-decoration: none;
+    color: var(--dark-grey);
+}
+
+h1 a {
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.menu {
+    list-style: '—';
+    font-size: 1.1rem;
+}
+
+.menu a {
+    color: var(--dark-grey);
+    text-decoration: none;
+}
+
+.menu a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+
+
+
+/* INDEX.PHP  */
+
+section {
+    padding-block-start: 13rem;
+    margin-block-end: 2.5rem;
+    margin-inline: auto;
+}
+
+.set {
+    width: 50%;
+}
+
+p {
+    font-size: 1.3rem;
+}
+
+h3 {
+    font-family: 'Transmedia';
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+/* ARTICLES.PHP */
+.article-set {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border: #262626 dotted 0.3rem;
+    list-style: none;
+}
+
+.preview-img img {
+    width: auto;
+    height: 100%;
+}
+
+.card-text-set {
+    margin: 2rem;
+}
+
+h4 {
+    font-family: 'Transmedia';
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+}
+
+.card-text-set h4 {
+    padding-bottom: 1rem;
+}
+
+.preview-content {
+    font-weight: 600;
+}
+
+.preview-link {
+    padding-top: 2rem;
+    font-weight: 900;
+    font-size: 1.4rem;
+}
+
+.preview-link a {
+    text-decoration: none;
+    color: var(--dark-grey);
+}
+
+.preview-link a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.set-action {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    margin-inline: 2rem;
+    margin-bottom: 2rem;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.icon {
+    width: 2rem;
+    transition: 0.2s;
+}
+
+
+
+
+
+
+
+/* ARTICLE.PHP */
+.article {
+    width: 50%;
+}
+
+.article-title {
+    font-size: 2.2rem;
+}
+
+.img-article {
+    width: 100%;
+    height: auto;
+    margin-block: 2.5rem;
+    border: #262626 dotted 0.3rem;
+}
+
+
+
+
+
+/* CONNEXION.PHP */
+.connexion {
+    width: 50%;
+}
+
+form {
+    padding: 1.8rem;
+    text-align: center;
+    border: var(--dark-grey) solid 0.2rem;
+    outline: var(--dark-grey) dotted 0.3rem;
+}
+
+label {
+    display: block;
+    font-family: 'Transmedia';
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.set-input-password {
+    margin-block: 2.5rem;
+}
+
+.input-field {
+    background-color: var(--orange);
+    border-width: 0.2rem;
+    border-style: dotted;
+    border-color: var(--dark-grey);
+}
+
+.input-field:focus-visible {
+    outline: var(--dark-grey) solid 0.1rem;
+}
+
+.input-button {
+    font-family: 'Transmedia';
+    font-size: 0.9rem;
+    letter-spacing: 0.2rem;
+    color: var(--orange);
+    background-color: var(--dark-grey);
+    padding: 0.6rem;
+    border-width: 0.2rem;
+    border-style: solid;
+    border-color: var(--dark-grey);
+    border-image: none;
+}
+
+.input-button:hover {
+    cursor: pointer;
+    color: var(--dark-grey);
+    background-color: var(--orange);
+    border-color: var(--dark-grey);
+}
+
+.connexion-info {
+    margin-top: 2rem;
+    font-family: 'Transmedia';
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 2.2rem;
+}
+
+
+
+
+
+/* LOGOUT.PHP */
+.logout {
+    width: 50%;
+}
+
+.set-button {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+}
+
+
+/* CREATION.PHP */
+.creation {
+    width: 50%;
+}
+
+.creation form {
+    text-align: left;
+}
+
+.set-input-img {
+    margin-block: 2rem;
+}
+
+.set-input-title input,
+.set-input-img input,
+.set-input-content textarea {
+    width: 100%;
+    padding: 0.3rem;
+}
+
+.button-article {
+    margin-top: 2rem;
+}
+
+.set-input-content input {
+    width: 100%;
+    height: 5rem;
+    overflow-x: scroll;
+}
+
+
+
+
+/* MODIFICATION.PHP */
+.modification {
+    width: 50%;
+}
+
+.modification form {
+    text-align: left;
+}
